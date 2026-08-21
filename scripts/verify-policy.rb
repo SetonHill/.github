@@ -2,7 +2,7 @@
 require "pathname"
 
 root = Pathname.new(File.expand_path("..", __dir__))
-version = "0.2.0"
+version = "0.3.0"
 errors = []
 
 required = %w[
@@ -14,6 +14,7 @@ required = %w[
   CODE_OF_CONDUCT.md
   PRIVACY.md
   REPOSITORY-STANDARDS.md
+  ORGANIZATION-STRUCTURE.md
   EXCEPTIONS-AND-OVERRIDES.md
   FACULTY-PROVISIONING-CHECKLIST.md
   STUDENT-START-CHECKLIST.md
@@ -23,6 +24,19 @@ required = %w[
 required.each do |relative|
   path = root.join(relative)
   errors << "missing or empty #{relative}" unless path.file? && path.size.positive?
+end
+
+structure = File.read(root.join("ORGANIZATION-STRUCTURE.md"))
+[
+  '^(SCS|SCY)[0-9]{3}$',
+  'SCS323-Fall-2026-Instructors',
+  'SCS323-Fall-2026-Students',
+  'SCS323-Fall-2026-Team-01',
+  'Students do not create repositories directly',
+  'Instructors',
+  'SHU-IT'
+].each do |phrase|
+  errors << "ORGANIZATION-STRUCTURE.md: missing governance contract #{phrase}" unless structure.include?(phrase)
 end
 
 hold_files = %w[FACULTY-POLICY.md EXCEPTIONS-AND-OVERRIDES.md PRIVACY.md REPOSITORY-STANDARDS.md SECURITY.md FACULTY-PROVISIONING-CHECKLIST.md]
