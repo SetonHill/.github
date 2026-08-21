@@ -1,6 +1,6 @@
 # Bootstrap Exception Record
 
-Version: 0.2.0
+Version: 0.3.0
 
 The public `SetonHill/.github` repository required an existing default branch before its organization profile could use the protected pull-request workflow. GitHub created bootstrap commit `862a94c1b4dc2e0e6ce1c1159a3463b33c5e3bc4` on `main` containing only a generated root `README.md` with the repository name and public description.
 

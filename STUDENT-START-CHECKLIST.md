@@ -1,6 +1,6 @@
 # Student Start Checklist
 
-Version: 0.2.0
+Version: 0.3.0
 
 - [ ] Use your own GitHub account and submit its exact username through the approved roster process.
 - [ ] Enable two-factor authentication and accept the organization invitation.

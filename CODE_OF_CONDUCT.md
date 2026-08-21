@@ -1,6 +1,6 @@
 # Code of Conduct
 
-Version: 0.2.0
+Version: 0.3.0
 
 SetonHill organization repositories are professional learning and research spaces. Treat classmates, instructors, staff, and collaborators with respect. Critique work and evidence rather than people. Use clear, constructive language; credit contributions; make room for questions and recovery from mistakes; and support accessible, inclusive participation.
 
