@@ -1,10 +1,12 @@
 # Repository Standards
 
-Version: 0.2.0
+Version: 0.3.0
 
 ## Ownership, Naming, and Visibility
 
-Course and research repositories must be owned by the `SetonHill` organization. Use the already-established course/team repository naming convention documented in the applicable course foundation; do not invent a competing organization-wide literal format. Avoid student names or identifiers in public repository names. Student project repositories are private by default. Public visibility requires explicit faculty content, privacy, licensing, and security review.
+Course and research repositories must be owned by the `SetonHill` organization. Follow the course, semester, and durable-repository naming grammar in `ORGANIZATION-STRUCTURE.md`. Avoid student names or identifiers in public repository names. Student project repositories are private by default. Public visibility requires explicit faculty content, privacy, licensing, and security review.
+
+Students do not create organization repositories directly. GitHub Classroom or an approved provisioning workflow creates private student repositories. General member repository creation is disabled; instructors use the approved, name-validating provisioning path. Only organization owners approve public repositories, visibility changes, transfers, deletion, and ruleset bypass.
 
 ## Mandatory Files
 
@@ -43,6 +45,8 @@ Review access at course close. Six months after the course ends, repositories ma
 ## Organization-Wide Enforcement
 
 The recommended managed baseline automatically applies private-by-default student repositories, secret scanning and push protection, protected `main`, strict `verify` and `gitleaks`, resolved conversations, least privilege, force-push and deletion blocks, and standard policy/templates to every future course repository. Keep the required approving-review count at zero for individual and small teams.
+
+Target the organization baseline to repositories matching `SCS[0-9][0-9][0-9]-*` or `SCY[0-9][0-9][0-9]-*`, and prevent unauthorized repository renaming so governed repositories cannot escape the baseline.
 
 This baseline does not access student personal repositories, make student work public, grant agents merge or grading authority, or weaken faculty judgment, accommodations, privacy requirements, or course-specific standards.
 

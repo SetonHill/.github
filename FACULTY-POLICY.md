@@ -1,6 +1,6 @@
 # Faculty Policy
 
-Version: 0.2.0
+Version: 0.3.0
 
 ## Scope and Responsibility
 
@@ -9,6 +9,8 @@ Faculty use the organization for approved teaching, supervised research, and col
 ## Provisioning and Least Privilege
 
 Keep rosters and team assignments in the approved private course-administration system. Create organization-owned repositories only after exact GitHub usernames and team assignments are confirmed. Student project repositories are private by default. Give instructors administrative access and students only the access needed for issues, branches, pull requests, and assigned project work.
+
+Follow `ORGANIZATION-STRUCTURE.md`. Faculty belong to the standing `Instructors` team, but receive repository access through course-and-semester instructor teams. Faculty do not create arbitrary organization repositories: use the approved provisioning path and naming grammar. A teaching administrator belongs in `Instructors`; institutional IT personnel remain in `SHU-IT` unless they also teach.
 
 Do not expose student membership, accommodations, grades, private repository URLs, or access exceptions in public organization content. Test permissions with representative instructor and student roles before graded work begins.
 

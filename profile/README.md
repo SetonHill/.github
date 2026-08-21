@@ -1,6 +1,6 @@
 # SetonHill on GitHub
 
-Version: 0.2.0
+Version: 0.3.0
 
 The SetonHill GitHub organization supports supervised coursework, student software projects, faculty collaboration, and research activity. The organization serves students, instructors, and authorized collaborators who need a shared, durable record of planning, code, review, testing, and releases.
 

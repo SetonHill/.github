@@ -1,6 +1,6 @@
 # Student Policy
 
-Version: 0.2.0
+Version: 0.3.0
 
 ## Purpose and Identity
 
@@ -11,6 +11,8 @@ The organization is a learning and research collaboration space, not an official
 ## Identity, Repository Ownership, and Privacy
 
 Complete assigned work in the organization-owned repository provided for the course or team. A personal repository or fork is not the authoritative submission record. Do not transfer, mirror, publish, or change the visibility of organization work without written instructor authorization.
+
+Students do not create repositories in the organization. Use only the private repository created by GitHub Classroom or the approved course provisioning process. Do not rename, transfer, delete, publicize, or change administration for an assigned repository.
 
 Even in a private repository, your GitHub username, commits, pull requests, reviews, and organization or team membership may reveal your identity to authorized participants. The organization must not expose rosters, accommodations, grades, or private team assignments publicly.
 

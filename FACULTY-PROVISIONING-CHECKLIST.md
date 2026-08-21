@@ -1,10 +1,11 @@
 # Faculty Provisioning Checklist
 
-Version: 0.2.0
+Version: 0.3.0
 
 ## Before Creation
 
-- [ ] Confirm course or research purpose, instructor owner, term, team model, and approved naming convention.
+- [ ] Confirm the course code matches `^(SCS|SCY)[0-9]{3}$`, then record purpose, instructor owner, term, year, team model, and approved visibility.
+- [ ] Confirm semester teams follow `COURSE-TERM-YEAR-ROLE` and repository names follow `ORGANIZATION-STRUCTURE.md`.
 - [ ] Receive the roster and exact GitHub usernames through the approved private system.
 - [ ] Confirm two-factor authentication and organization invitation process.
 - [ ] Identify official conduct, security, accommodation, and privacy reporting channels.
@@ -13,12 +14,14 @@ Version: 0.2.0
 ## Repository Creation
 
 - [ ] Create the repository inside `SetonHill`; make student work private by default.
+- [ ] Use GitHub Classroom or the approved provisioning workflow; do not permit students or general members to create organization repositories directly.
 - [ ] Add instructor administration and least-privilege student/team access.
 - [ ] Apply the approved repository foundation and every file in `REPOSITORY-STANDARDS.md`.
 - [ ] Configure protected `main`, strict `verify` and `gitleaks`, resolved conversations, linear history, administrator enforcement, and force-push/deletion blocks.
 - [ ] Keep mandatory approval count at zero unless the course explicitly adopts a supported alternative.
 - [ ] Enable GitHub secret scanning and push protection where available.
 - [ ] Confirm the organization-wide managed baseline applies private-by-default visibility, standard templates, least privilege, protected `main`, strict `verify` and `gitleaks`, resolved conversations, linear history, and force-push/deletion blocks.
+- [ ] Confirm the organization ruleset targets `SCS[0-9][0-9][0-9]-*` and `SCY[0-9][0-9][0-9]-*` and prevents unauthorized repository renaming.
 - [ ] Confirm `.env` and local secret files are ignored and `.env.example` is sanitized.
 
 ## Validation
